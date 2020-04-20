@@ -20,7 +20,7 @@ namespace FSecure::C3::Interfaces::Channels
     {
         //Do not remove the comment below here, otherwise post-build may experience issues.
         //AssemblyDLL Goes Here
-        unsigned char assemblyDLL[] = { 0x00,0x00,0x00 };
+		unsigned char assemblyDLL[] = { 0x00,0x00,0x00,0x00 };
 
 
         PBYTE pbAssembly = assemblyDLL;

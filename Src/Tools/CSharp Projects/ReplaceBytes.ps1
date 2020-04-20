@@ -3,9 +3,6 @@
 [regex]$firstRegex = "unsigned char assemblyDLL\[\] \= \{(0x..(,)?)+"
 [regex]$secondRegex = "(0x..(,)?)+( )?}"
 
-Write-Host $cpppath
-Write-Host $dllpath
-
 $FirstLine = (gci $cpppath | select-string "unsigned char assemblyDLL").LineNumber
 
 #Get Last Line Works
